@@ -1,3 +1,67 @@
-## A New Post
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  
+  <style type="text/css">
+a {
+	color:brown;
+	text-decoration:none;
+	font-family:"Andale Mono", monospace;
+	font-size: medium;
+}
+
+body {
+	background:lightyellow;
+	font-family:"Andale Mono", monospace;
+	font-size: small;
+}
+</style>
+</head>
+
+<body>
+   <h1>Popstar: Never Stop Never Stopping</h1>
+
+    <p> This weekend I went to see <b>Popstar: Never Stop Never Stopping</b>.  I thoroughly enjoyed it and would encourage anyone to see it.  It also got favorable reviews for the most part per Rotten Tomatoes: <a href="https://www.rottentomatoes.com/m/popstar_never_stop_never_stopping/" target=_blank>PopStar Rotten Tomatoes Reviews</a></p>
+
+    <p> If you have never heard of the movie before, the script was written by Andy Samberg, Akiva Schaffer, and Jorma Taccone.  These 3 guys make up the comedy trio "The Lonely Island", and are probably most well known for their digital shorts on <i> Saturday Night Live </i>.  If interested, you can read more about "The Lonely Island" here: <a href="https://en.wikipedia.org/wiki/The_Lonely_Island" target=_blank>Lonely Island Wiki</a></p>
+
+    <p> The mockumentary revolves around Andy's character, megastar Conner4Real.  Below is a list of a few other actors in the film and the roles they play: (source:<a href="https://en.wikipedia.org/wiki/Popstar:_Never_Stop_Never_Stopping" target=_blank>Popstar Wiki)</a></p>
+
+     <ul>
+
+      <li> Akiva Schaffer </li>
+       <ul> Lawrence "Kid Brain" Dunn, Conner's former bandmate and songwriter </ul>
+      <li> Jorma Taccone </li>
+       <ul> Owen "Kid Contact" Bouchard, Conner's former bandmate and current DJ </ul>
+      <li> Sarah Silverman </li>
+       <ul> Paula Klein, his publicist </ul>
+      <li> Tim Meadows </li>
+       <ul> Harry Duggins, his manager </ul>
+      <li> Chris Redd </li>
+       <ul> Hunter the Hungry </ul>
+
+     </ul>
+    
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
