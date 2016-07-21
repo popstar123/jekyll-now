@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: example2
 ---
 ## A New Post
 
