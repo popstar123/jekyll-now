@@ -1,3 +1,45 @@
-## A New Post
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+    {% include meta.html %}
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  
+  <style type="text/css">
+a {
+	color:brown;
+	text-decoration:none;
+	font-family:"Andale Mono", monospace;
+	font-size: medium;
+}
+
+body {
+	background:lightyellow;
+	font-family:"Andale Mono", monospace;
+	font-size: small;
+}
+</style>
+</head>
+
+<body>
+   <h1>Testing</h1>
+
+<p> Something1! &nbsp&nbsp Something2! &nbsp&nbsp Something3!
+    
+    {{ content }}
+  
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+  
+    {% include analytics.html %}
+  </body>
+</html>
+
