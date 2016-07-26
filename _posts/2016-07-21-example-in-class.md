@@ -2,6 +2,7 @@
 published: true
 layout: example
 mood: thoughtful
+something: something
 ---
 ## A New Post
 
