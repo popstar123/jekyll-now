@@ -1,3 +1,10 @@
-## A New Post
+# main links links
+main:
+  - title: "Placeholder1test!"
+    url: "/something"
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+  - title: "Placholder2!test"
+    url: https://bing.com
+
+  - title: "Placeholder3!test"
+    url: https://google.com
