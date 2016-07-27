@@ -2,8 +2,8 @@
 
 <p> Placeholder1! &nbsp&nbsp Placeholder2! &nbsp&nbsp Placeholder3test! </p>
 
-{% for %}
+{% for link in site.data.navigation.main %}
 
-<li><a href="https://bing.com">Something</a></li>
+<li><a href="{{ link.url }}">{{ link.title }}</a></li>
 
 {% endfor %}
